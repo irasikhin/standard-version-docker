@@ -1,0 +1,14 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: docker
+    image: plugins/docker
+    settings:
+      repo: irasikhin/standard-version
+
+trigger:
+  branch:
+    - master
+
