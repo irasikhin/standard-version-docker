@@ -7,6 +7,9 @@ steps:
     image: plugins/docker
     settings:
       repo: irasikhin/standard-version
+      username: irasikhin
+      password:
+        from_secret: docker_password
 
 trigger:
   branch:
